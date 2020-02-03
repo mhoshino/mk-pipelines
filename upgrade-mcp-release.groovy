@@ -347,16 +347,16 @@ timeout(time: pipelineTimeout, unit: 'HOURS') {
         try {
             stage('Update Reclass and Salt-Formulas') {
                 common.infoMsg('Perform: Full salt sync')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
-                salt.fullRefresh(venvPepper, '*')
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
+                salt.fullRefresh(venvPepper, '*', null)
             }
         }
         catch (Throwable e) {
